@@ -119,3 +119,16 @@ function setItems(product) {
 }
 
 onLoadCartNumbers();
+
+const registerFormElement = document.querySelector("#submitting-forms form")
+
+registerFormElement.addEventListener("submit", (event) => {
+  event.preventDefault()
+
+const email = registerFormElement.elements.email.value
+const password = registerFormElement.elements.password.value
+console.log("email",email)  
+console.log("password",password)  
+
+  alert("Registered Successfully")
+})
